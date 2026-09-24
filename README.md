@@ -2,73 +2,103 @@
 
 ## Project Overview
 
-This portfolio project analyzes a synthetic healthcare operations dataset to demonstrate practical data analysis, SQL, Python, reporting, and data visualization skills.
+This portfolio project demonstrates practical data analysis, reporting, data quality, and business intelligence skills using a synthetic healthcare operations dataset.
 
-The project focuses on case volume, processing time, documentation issues, regional trends, and case outcomes.
+The analysis examines case volume, processing time, documentation issues, regional trends, and case outcomes to identify patterns that could support operational decision-making and process improvement.
 
 **All data in this project is synthetic and contains no real patient, employer, or confidential company information.**
 
 ## Business Questions
 
-The analysis explores:
+This project explores the following questions:
 
-* What is the overall case volume?
+* How many cases are included in the dataset?
 * Which case types have the highest volume?
-* Which case types have the longest processing times?
-* How are documentation issues related to processing time?
-* How does case volume vary by region?
+* Which case types have the longest average processing times?
+* How do documentation issues relate to processing time?
+* How does case volume and processing performance vary by region?
 * What are the most common case outcomes?
-
-## Tools
-
-* SQL
-* Python
-* Pandas
-* Microsoft Excel
-* Tableau
-* Data Visualization
-* Business Analysis
+* Which operational trends could be useful for process improvement?
 
 ## Dataset
 
-The dataset contains synthetic operational records with the following fields:
+The dataset contains **20 synthetic operational case records** with the following fields:
 
-* Case ID
-* Received Date
-* Case Type
-* Region
-* Submission Channel
-* Status
-* Documentation Issue
-* Priority
-* Processing Days
-* Outcome
+| Field                 | Description                                            |
+| --------------------- | ------------------------------------------------------ |
+| `case_id`             | Unique identifier for each case                        |
+| `received_date`       | Date the case was received                             |
+| `case_type`           | Type of case                                           |
+| `region`              | Geographic region                                      |
+| `submission_channel`  | Method used to submit the case                         |
+| `status`              | Current processing status                              |
+| `documentation_issue` | Indicates whether a documentation issue was identified |
+| `priority`            | Case priority                                          |
+| `processing_days`     | Number of days required to process the case            |
+| `outcome`             | Final or current case outcome                          |
+
+## Tools & Technologies
+
+* **SQL** — data aggregation, grouping, conditional logic, and operational metrics
+* **Python** — data analysis and dataset inspection
+* **Pandas** — data manipulation and analysis
+* **Microsoft Excel** — data review and reporting
+* **Tableau** — data visualization and dashboard development
+* **GitHub** — project documentation and version control
 
 ## SQL Analysis
 
-SQL queries were created to analyze:
+SQL queries were developed to analyze:
 
 * Total case volume
 * Case volume by case type
-* Average processing time
+* Average processing time by case type
 * Documentation issue rate
 * Processing time by documentation status
-* Regional performance
+* Case volume by region
+* Regional processing performance
 * Outcome distribution
+
+The SQL analysis demonstrates the use of:
+
+* `COUNT()`
+* `AVG()`
+* `SUM()`
+* `CASE`
+* `GROUP BY`
+* `ORDER BY`
+* Aggregated reporting metrics
 
 ## Python Analysis
 
 Python and Pandas were used to:
 
-* Inspect the dataset
-* Analyze processing times
-* Compare cases with and without documentation issues
-* Analyze regional performance
-* Examine case outcomes
+* Load and inspect the dataset
+* Review dataset structure and columns
+* Calculate average processing time by case type
+* Compare processing times for cases with and without documentation issues
+* Analyze case volume and processing performance by region
+* Examine the distribution of case outcomes
+
+## Key Analysis Areas
+
+### Processing Performance
+
+The project compares processing times across different case types and regions to identify areas with longer processing cycles.
+
+### Data Quality
+
+Documentation issues are analyzed to determine their relationship with processing time and identify potential data-quality or workflow considerations.
+
+### Operational Trends
+
+Case volume, status, priority, and outcomes are reviewed to identify patterns that could support reporting and operational decision-making.
 
 ## Tableau Dashboard
 
-A Tableau dashboard will be created to visualize:
+A Tableau dashboard is planned as an additional visualization component for the project.
+
+The dashboard will focus on:
 
 * Total case volume
 * Average processing time
@@ -78,12 +108,28 @@ A Tableau dashboard will be created to visualize:
 * Case volume by region
 * Case outcomes
 
-Interactive filters will allow users to explore the data by case type, region, status, and priority.
+Interactive filters can be used to explore the data by case type, region, status, and priority.
 
 ## Skills Demonstrated
 
-**SQL | Python | Pandas | Excel | Tableau | Data Visualization | Data Reporting | Data Quality | Business Analysis | Process Improvement**
+**SQL | Python | Pandas | Excel | Tableau | Data Visualization | Data Reporting | Data Quality | Business Analysis | Process Improvement | Data Interpretation**
+
+## Project Structure
+
+```text
+healthcare-operations-data-analysis/
+│
+├── README.md
+├── data/
+│   └── synthetic_healthcare_cases.csv
+├── sql/
+│   └── analysis.sql
+└── python/
+    └── analysis.py
+```
 
 ## Disclaimer
 
-This project was created for educational and portfolio purposes. The dataset is entirely synthetic and is not representative of actual company, healthcare, patient, or operational data.
+This project was created for educational and portfolio purposes.
+
+The dataset is entirely synthetic and does not contain real patient information, employer information, confidential business information, or actual operational records.
