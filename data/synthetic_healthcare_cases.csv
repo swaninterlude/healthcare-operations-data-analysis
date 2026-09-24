@@ -1,1 +1,21 @@
-
+case_id,received_date,case_type,region,submission_channel,status,documentation_issue,priority,processing_days,outcome
+10001,2025-01-03,Reconsideration,South,Portal,Completed,No,Standard,5,Approved
+10002,2025-01-04,Initial Review,West,Fax,Completed,Yes,Standard,8,Returned
+10003,2025-01-07,Appeal,Midwest,Electronic,Pending,No,High,7,Pending
+10004,2025-01-09,Reconsideration,South,Portal,Completed,No,High,4,Approved
+10005,2025-01-12,Documentation Review,Northeast,Mail,Completed,Yes,Standard,9,Returned
+10006,2025-01-14,Initial Review,West,Portal,Completed,No,Standard,3,Approved
+10007,2025-01-18,Appeal,South,Fax,Escalated,Yes,High,12,Denied
+10008,2025-01-20,Reconsideration,Midwest,Electronic,Completed,No,Standard,6,Approved
+10009,2025-01-23,Initial Review,Northeast,Portal,Completed,No,Standard,4,Approved
+10010,2025-01-27,Documentation Review,South,Mail,Pending,Yes,Standard,10,Pending
+10011,2025-02-02,Reconsideration,West,Portal,Completed,No,Standard,5,Approved
+10012,2025-02-04,Appeal,Midwest,Fax,Completed,Yes,High,11,Denied
+10013,2025-02-06,Initial Review,South,Electronic,Completed,No,Standard,4,Approved
+10014,2025-02-09,Documentation Review,Northeast,Mail,Completed,No,Standard,6,Approved
+10015,2025-02-11,Reconsideration,South,Portal,Pending,Yes,High,9,Pending
+10016,2025-02-15,Initial Review,West,Portal,Completed,No,Standard,3,Approved
+10017,2025-02-18,Appeal,Northeast,Electronic,Escalated,Yes,High,13,Denied
+10018,2025-02-21,Reconsideration,Midwest,Fax,Completed,No,Standard,6,Approved
+10019,2025-02-24,Initial Review,South,Mail,Completed,No,Standard,4,Approved
+10020,2025-02-27,Documentation Review,West,Electronic,Completed,Yes,Standard,8,Returned
