@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load synthetic dataset
-df = pd.read_csv("../data/synthetic_healthcare_cases.csv")
+df = pd.read_csv("data/synthetic_healthcare_cases.csv")
 
 # Basic dataset overview
 print("Dataset Shape:")
